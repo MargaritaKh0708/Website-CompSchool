@@ -1,3 +1,5 @@
+import {Ellipse} from '../ellipse/Ellipse'
+
 export const About: React.FC = () => { 
     return (
 
