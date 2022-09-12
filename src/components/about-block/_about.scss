@@ -1,0 +1,58 @@
+.about-block {
+    margin-top: 200px;
+
+    &__wrapper {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+
+    &__cube {
+        position: relative;
+       
+    }
+
+    &__border {
+       background: linear-gradient(94.26deg, $c-nav-btn 9.51%, $c-nav-btn-2 90.23%);
+       position: relative;
+       height: 499px;
+        width: 526px;
+       
+
+        &::after {
+            background: url('assets/img/bgc.png') repeat;
+            transform: translate(30px, 30px);
+            position: absolute;
+            height: 442px;
+            width: 466px;
+            content: '';
+        }
+    }
+
+    &__img {
+        background: url('assets/img/comp.png');
+        position: absolute;
+        height: 446px;
+        width: 446px;
+        right: 40px;
+        top: 96px;
+    }
+
+    &__text-content {
+        padding-left: 139px;
+        
+        flex: 1;
+    }
+
+    &__title {
+        line-height: 140%;
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+    &__description {
+        padding-top: 45px;
+        line-height: 160%;
+        font-size: 16px;
+    }
+}

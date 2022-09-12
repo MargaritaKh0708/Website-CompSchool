@@ -1,0 +1,67 @@
+.order-line {
+  background-color: $c-background;
+  justify-content: center;
+  align-items: center;
+  padding: 36px 0px;
+  display: flex;
+
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+
+  &__btn {
+    background: linear-gradient(
+      94.78deg,
+      $c-order-bnt 11.19%,
+      $c-order-bnt-2 93.72%
+    );
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: $c-white;
+    border: none;
+  }
+  &__statistic {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+
+    &-item {
+     color: $c-light-white;
+
+      & span {
+        color: $c-white;
+      }
+    }
+  }
+
+  &__percent {
+    flex-direction: column;
+    display: flex;
+    gap: 8px;
+
+    &-line {
+      background: linear-gradient(
+        94.78deg,
+        #df5950 11.19%,
+        #451046 60.72%,
+        $c-white 61%
+      );
+      width: 714px;
+      height: 6px;
+    }
+
+    &-num {
+      color: $c-light-white;
+      position: relative;
+
+      & span:nth-child(2)
+      {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
