@@ -1,5 +1,6 @@
 .footer {
   padding-top: 200px;
+  padding-bottom: 50px;
 
   &__wrapper {
     justify-content: center;
@@ -28,7 +29,7 @@
     & label {
       position: relative;
       display: flex;
-      width: 332px;
+      width: 492px;
     }
     
 
@@ -44,7 +45,7 @@
     & label button {
       @extend .order-line__btn;
       position: absolute;
-      right: -110px;
+      right: 0px;
     }
   }
 

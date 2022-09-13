@@ -36,7 +36,7 @@ export const Teachers: React. FC = () => {
                     <h2>Ваши преподаватели</h2>
             </div>
             <div className='teachers__list'> {teachers.map(teacher => (
-                <TeachersItem teacherName={teacher.teacherName} possition={teacher.possition} photo={teacher.photo}/>
+                <TeachersItem teacherName={teacher.teacherName} possition={teacher.possition} photo={teacher.photo} key={teacher.photo}/>
             ))}</div>
            
             </div>

@@ -65,6 +65,7 @@ a {
 }
 .header__wrapper {
   justify-content: space-between;
+  background: rgba(0, 0, 0, 0.1019607843);
   align-items: center;
   padding: 40px 80px;
   display: flex;
@@ -490,6 +491,7 @@ a {
 
 .footer {
   padding-top: 200px;
+  padding-bottom: 50px;
 }
 .footer__wrapper {
   justify-content: center;
@@ -515,7 +517,7 @@ a {
 .footer__form label {
   position: relative;
   display: flex;
-  width: 332px;
+  width: 492px;
 }
 .footer__form label input {
   background: rgba(255, 255, 255, 0.2509803922);
@@ -527,7 +529,7 @@ a {
 }
 .footer__form label button {
   position: absolute;
-  right: -110px;
+  right: 0px;
 }
 .footer__social {
   padding-top: 30px;

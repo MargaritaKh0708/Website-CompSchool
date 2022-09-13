@@ -1,9 +1,10 @@
+import logo from 'assets/img/logo.svg'
 
 export const Header: React.FC = () => {
     return (
         <header className='header container'>
             <div className='header__wrapper'>
-                <div className='header__logo'></div>
+                <div className='header__logo'><img src={logo} alt="logo" /></div>
                 <nav className='header__navigation'>
                 <ul className='header__navigation-list'>
                     <li className='header__navigation-item'><a href="#main">Главная</a></li>
