@@ -1,0 +1,55 @@
+.teachers {
+    padding-top: 230px;
+
+    &__wrapper {
+        justify-content: space-between;
+        flex-direction: column;
+        display: flex;
+    }
+
+    &__list  {
+        @extend .teachers__wrapper;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 113px;
+        width: 100%;
+    }
+
+    &__item {
+        @extend .teachers__wrapper;
+        align-items: center;
+        gap: 40px;
+
+        &-photo {
+            border-radius: 50%;
+            width: 190px;
+            height: 190x;
+        }
+
+        &-name { 
+            text-align: center;
+            line-height: 140%;
+            font-weight: 500;
+            font-size: 24px;
+        }
+
+        &-possition {
+            color: $c-light-white-08;
+            padding-top: 15px;
+            line-height: 160%;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        &-biography {
+            border: 1px solid $c-white;
+            border-radius: 20px;
+            width: fit-content;
+            padding: 10px 15px;
+            background: none;
+            line-height: 150%;
+            color: $c-white;
+            font-size: 16px;
+        }
+    }
+}

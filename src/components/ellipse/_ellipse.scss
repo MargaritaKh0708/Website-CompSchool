@@ -50,6 +50,12 @@ $color:
 
 .item_2 {
   &::before {
-      transform: rotate(91deg);
+      transform: rotate(90deg);
+  }
+}
+
+.item_3 {
+  &::before {
+      transform: rotate(-90deg);
   }
 }

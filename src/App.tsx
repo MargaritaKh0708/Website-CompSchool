@@ -1,7 +1,9 @@
+import { Footer } from 'components/footer/Footer';
 import { GetProff } from 'components/get-prof-block/GetProff';
 import { Partners } from 'components/partners-block/Partners';
 import { ProgramBlock } from 'components/program-block/ProgramBlock';
 import { QuickStartBlock } from 'components/quick-start-block/QuickStartBlock';
+import { Teachers } from 'components/teachers-block/Teahers';
 import { About } from './components/about-block/About';
 import { Header } from './components/header/Header';
 import { PresentationBlock } from './components/presentation-block/PresentationBlock';
@@ -21,6 +23,8 @@ function App() {
       <GetProff/>
       <Partners/>
       <ProgramBlock/>
+      <Teachers/>
+      <Footer/>
     </div>
   );
 }

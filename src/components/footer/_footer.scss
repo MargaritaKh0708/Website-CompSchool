@@ -1,0 +1,68 @@
+.footer {
+  padding-top: 200px;
+
+  &__wrapper {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  &__title {
+    line-height: 140%;
+    font-weight: 700;
+    font-size: 48px;
+  }
+
+  &__sub-title {
+    color: $c-light-white;
+    line-height: 160%;
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__form {
+    padding-top: 60px;
+
+    & label {
+      position: relative;
+      display: flex;
+      width: 332px;
+    }
+    
+
+    & label input {
+      background: $c-light-white-025;
+      border-radius: 50px;
+      padding: 10px 30px;
+      color: $c-white;
+      border: none;
+      width: 100%;
+    }
+
+    & label button {
+      @extend .order-line__btn;
+      position: absolute;
+      right: -110px;
+    }
+  }
+
+  &__social{
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+
+    & button {
+      @extend .header__navigation-btn;
+      padding: 10px;
+      height: 50px;
+      width: 50px;
+
+
+      & img {
+        max-width: 100%;
+      }
+    }
+  }
+}
