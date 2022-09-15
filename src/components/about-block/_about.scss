@@ -5,6 +5,11 @@
         justify-content: space-between;
         align-items: center;
         display: flex;
+
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            gap: 40px;
+        }
     }
 
     &__cube {
@@ -39,6 +44,7 @@
 
     &__text-content {
         flex: 0 0 50%;
+
     }
 
     &__title {

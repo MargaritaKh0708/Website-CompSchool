@@ -19,6 +19,17 @@
         height: 40px;
         width: 40px;
     }
+
+
+    &__btn {
+        display: none;
+
+        @media screen and (max-width: 1000px){
+            display: block;
+        }
+    }
+
+
 }
    .navigation {
         justify-content: space-between;
@@ -26,6 +37,7 @@
         display: flex;
         gap: 20px;
 
+        
 
         &__item a {
             color: $c-white;
@@ -36,6 +48,10 @@
         font-size: 16px;
         display: flex;
         gap: 56px;
+        @media screen and (max-width: 1000px){
+            display: none;
+        }
+
     }
 
     &__btn {
@@ -45,4 +61,18 @@
         padding: 10px 30px;
         border: none;
     }
+}
+
+.burger{
+
+    flex-direction: column;
+    display: flex;
+
+    &__item {
+        background: linear-gradient(94.26deg, $c-nav-btn 9.51%, $c-nav-btn-2 90.23%);
+        margin-bottom: 5px;
+    border-radius: 3px;
+    height: 2px;
+    width: 22px;}
+    
 }

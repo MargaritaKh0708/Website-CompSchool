@@ -12,6 +12,16 @@
         padding: 30px 66px;
         border-top: none;
         width: 25%; 
+
+        @media screen and (max-width: 1000px){
+            padding: 15px 33px;
+        }
+
+        @media screen and (max-width: 600px){
+            padding: 10px 22px;
+        }
+
+
         
         &:nth-of-type(4n) {
         border-right: none;
