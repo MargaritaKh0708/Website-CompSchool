@@ -9,7 +9,6 @@
 
     &__cube {
         position: relative;
-       
     }
 
     &__border {
@@ -39,9 +38,7 @@
     }
 
     &__text-content {
-        padding-left: 139px;
-        
-        flex: 1;
+        flex: 0 0 50%;
     }
 
     &__title {

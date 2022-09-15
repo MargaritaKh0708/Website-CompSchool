@@ -5,21 +5,20 @@ export const Header: React.FC = () => {
         <header className='header container'>
             <div className='header__wrapper'>
                 <div className='header__logo'><img src={logo} alt="logo" /></div>
-                <nav className='header__navigation'>
-                <ul className='header__navigation-list'>
-                    <li className='header__navigation-item'><a href="#main">Главная</a></li>
-                    <li className='header__navigation-item'><a href="#couses">Курсы</a></li>
-                    <li className='header__navigation-item'><a href="#schedule">Расписание</a></li>
-                    <li className='header__navigation-item'><a href="#teachers">Преподаватели</a></li>
-                    <li className='header__navigation-item'><a href="#mailing">Рассылка</a></li>
-                    <li className='header__navigation-item'><a href="#contacts">Контакты</a></li>
+                <nav className='navigation'>
+                <ul className='navigation__list'>
+                    <li className='navigation__item'><a className='navigation__link' href="#main">Главная</a></li>
+                    <li className='navigation__item'><a className='navigation__link' href="#couses">Курсы</a></li>
+                    <li className='navigation__item'><a className='navigation__link' href="#schedule">Расписание</a></li>
+                    <li className='navigation__item'><a className='navigation__link' href="#teachers">Преподаватели</a></li>
+                    <li className='navigation__item'><a className='navigation__link' href="#mailing">Рассылка</a></li>
+                    <li className='navigation__item'><a className='navigation__link' href="#contacts">Контакты</a></li>
                 </ul>
-                <button className='header__navigation-btn'>
+                <button className='navigation__btn'>
                     Зайти в кабинет
                 </button>
             </nav>
             </div>
-
         </header>
     )
 }

@@ -19,27 +19,26 @@
         height: 40px;
         width: 40px;
     }
-
-    &__navigation {
+}
+   .navigation {
         justify-content: space-between;
         align-items: center;
         display: flex;
         gap: 20px;
 
 
-        &-item a {
+        &__item a {
             color: $c-white;
         }
-    }
 
-    &__navigation-list {
+    &__list {
         justify-content: space-between;
         font-size: 16px;
         display: flex;
         gap: 56px;
     }
 
-    &__navigation-btn {
+    &__btn {
         background: linear-gradient(94.26deg, $c-nav-btn 9.51%, $c-nav-btn-2 90.23%);
         white-space: nowrap;
         border-radius: 50px;

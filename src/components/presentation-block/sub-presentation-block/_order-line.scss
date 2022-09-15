@@ -39,6 +39,7 @@
 
   &__percent {
     flex-direction: column;
+    flex: 0 0 50%;
     display: flex;
     gap: 8px;
 
@@ -49,7 +50,6 @@
         #451046 60.72%,
         $c-white 61%
       );
-      width: 714px;
       height: 6px;
     }
 

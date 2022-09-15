@@ -25,18 +25,13 @@
 body {
   background: url("assets/img/bgc.png") repeat;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
   color: #fff;
 }
 
-.contaiter {
-  max-width: 1980px;
-  padding: 0 30px;
-  margin: 0 auto;
-  width: 100%;
-}
-
 .wrapper {
-  max-width: 1290px;
+  max-width: 1310px;
+  padding: 10px;
   margin: 0 auto;
 }
 
@@ -75,22 +70,23 @@ a {
   height: 40px;
   width: 40px;
 }
-.header__navigation {
+
+.navigation {
   justify-content: space-between;
   align-items: center;
   display: flex;
   gap: 20px;
 }
-.header__navigation-item a {
+.navigation__item a {
   color: #fff;
 }
-.header__navigation-list {
+.navigation__list {
   justify-content: space-between;
   font-size: 16px;
   display: flex;
   gap: 56px;
 }
-.header__navigation-btn, .footer__social button {
+.navigation__btn, .footer__social button {
   background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
   white-space: nowrap;
   border-radius: 50px;
@@ -173,12 +169,12 @@ a {
 }
 .order-line__percent {
   flex-direction: column;
+  flex: 0 0 50%;
   display: flex;
   gap: 8px;
 }
 .order-line__percent-line {
   background: linear-gradient(94.78deg, #df5950 11.19%, #451046 60.72%, #fff 61%);
-  width: 714px;
   height: 6px;
 }
 .order-line__percent-num {
@@ -224,8 +220,7 @@ a {
   top: 96px;
 }
 .about-block__text-content {
-  padding-left: 139px;
-  flex: 1;
+  flex: 0 0 50%;
 }
 .about-block__title {
   line-height: 140%;

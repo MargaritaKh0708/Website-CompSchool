@@ -1,37 +1,33 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body  {
-background: url('assets/img/bgc.png') repeat;
-font-family: 'Roboto', sans-serif;
-color: $c-white;
+body {
+  background: url("assets/img/bgc.png") repeat;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  color: $c-white;
 }
-.contaiter {
-    max-width: 1980px;
-    padding: 0 30px;
-    margin: 0 auto;
-    width: 100%;
-}
-
 .wrapper {
-    max-width: 1290px; 
-    margin: 0 auto;
+  max-width: 1310px;
+  padding: 10px;
+  margin: 0 auto;
 }
+
 img {
- width: 100%;
+  width: 100%;
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 input {
-    outline: none;
+  outline: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
