@@ -597,4 +597,34 @@ a {
 }
 .footer__social button img {
   max-width: 100%;
+}
+
+.modal {
+  background-color: rgba(31, 31, 36, 0.2);
+  justify-content: center;
+  pointer-events: none;
+  align-items: center;
+  transition: 0.5s;
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  z-index: 200;
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+.modal.active {
+  pointer-events: all;
+  opacity: 1;
+}
+.modal__content {
+  background-color: #fff;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  padding: 10px;
+  width: 50vw;
+}
+.modal__content.active {
+  transform: scale(1);
 }/*# sourceMappingURL=index.css.map */

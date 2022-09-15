@@ -1,8 +1,11 @@
 import logo from "assets/img/logo.svg";
+import { ModalWindow } from "components/modal/ModalWindow";
 import { useState } from "react";
+import { NavigationList } from "./NavigationList";
 
 export const Header: React.FC = () => {
-  const [burgerActive, setBurgerActive] = useState<boolean>(true);
+  const [burgerActive, setBurgerActive] = useState<boolean>(false);
+  const [login, setLogin] = useState<boolean>(false);
 
   return (
     <header className="header container">
@@ -11,39 +14,8 @@ export const Header: React.FC = () => {
           <img src={logo} alt="logo" />
         </div>
         <nav className="navigation">
-          <ul className="navigation__list">
-            <li className="navigation__item">
-              <a className="navigation__link" href="#main">
-                Главная
-              </a>
-            </li>
-            <li className="navigation__item">
-              <a className="navigation__link" href="#couses">
-                Курсы
-              </a>
-            </li>
-            <li className="navigation__item">
-              <a className="navigation__link" href="#schedule">
-                Расписание
-              </a>
-            </li>
-            <li className="navigation__item">
-              <a className="navigation__link" href="#teachers">
-                Преподаватели
-              </a>
-            </li>
-            <li className="navigation__item">
-              <a className="navigation__link" href="#mailing">
-                Рассылка
-              </a>
-            </li>
-            <li className="navigation__item">
-              <a className="navigation__link" href="#contacts">
-                Контакты
-              </a>
-            </li>
-          </ul>
-          <button className="navigation__btn">Зайти в кабинет</button>
+          <NavigationList/>
+          <button className="navigation__btn" onClick={()=> setLogin(true)}>Зайти в кабинет</button>
           <button name="burger" type="button" className="header__btn">
             <div className="burger" onClick={() => setBurgerActive(true)}>
               <span className="burger__item"></span>
@@ -51,6 +23,11 @@ export const Header: React.FC = () => {
               <span className="burger__item"></span>
             </div>
           </button>
+          <ModalWindow active={burgerActive} setActive={setBurgerActive}>
+            <NavigationList/>
+          </ModalWindow>
+          <ModalWindow active={login} setActive={setLogin}>
+          </ModalWindow>
         </nav>
       </div>
     </header>
